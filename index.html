@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>making a calculator by using html,css,javascript</title>
+
+
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+<h >SIMPLE CALCULATOR</h>
+
+<marquee bgcolor ="orange" vspace=5>CALCULATOR</marquee>
+<marquee bgcolor ="blue" vspace=5>ITS PERFOM THE MATHEMATICAL OPERATION</marquee>
+<marquee bgcolor ="red" vspace=5>BY USING HTML,CSS,JAVASCRIPT</marquee>
+
+
+
+
+
+
+<table class="calculator">
+<tr>
+<td colspan="3"> <input class="display-box" type ="text" id="result"disabled/>
+</td>
+<!-- clearScreen()function clear allthe values -->
+<td> <input type="button" value="C" onclick="clearScreen()" id="btn"/> </td>
+</tr>
+
+<tr>
+<!-- display() function dispalys the value of the clicked button-->
+<td> <input type="button" value="1"  onclick="dispaly('1')"/> </td>
+<td> <input type="button" value="2"  onclick="dispaly('2')"/> </td>
+<td> <input type="button" value="3"  onclick="dispaly('3')"/> </td>
+<td> <input type="button" value="/"  onclick="dispaly('/')"/> </td>
+</tr>
+<tr>
+<td> <input type="button" value="4"  onclick="dispaly('4')"/> </td>
+<td> <input type="button" value="5"  onclick="dispaly('5')"/> </td>
+<td> <input type="button" value="6"  onclick="dispaly('6')"/> </td>
+<td> <input type="button" value="-"  onclick="dispaly('-')"/> </td>
+</tr>
+<tr>
+<td> <input type="button" value="7"  onclick="dispaly('7')"/> </td>
+<td> <input type="button" value="8"  onclick="dispaly('8')"/> </td>
+<td> <input type="button" value="9"  onclick="dispaly('9')"/> </td>
+<td> <input type="button" value="+"  onclick="dispaly('+')"/> </td>
+</tr>
+<tr>
+<td> <input type="button" value="."  onclick="dispaly('.')" /></td>
+<td> <input type="button" value="0"  onclick="dispaly('0')"/> </td>
+<!-- calculate () function evaluates the mathemaical expression -->
+<td> <input type="button" value="="  onclick="calculate()" id="btn" /></td>
+<td> <input type="button" value="*" onclick="dispaly('*')"/> </td>
+
+</tr>
+</table>
+</body>
+<script src="main.js"></script>
+
+
+</html>
